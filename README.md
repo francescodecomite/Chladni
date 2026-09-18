@@ -1,2 +1,14 @@
 # Chladni
 Utiliser des micro-controleurs pour faire des figures de Chladni
+
+Plusieurs phases : 
+1. Générer et contrôler du son avec un Arduino (puis ESP32, puis microchip (mais je ne promets rien))
+2. Afficher des infos sur chacun des modèles avec un écran LCD. 
+
+#Générer et contrôler du son avec un Arduino
+Je voudrais bien générer un son plus fort que ce que peut sortir l'arduino, mais pour ça faut amplifier, et faire un circuit avec un transistor
+et ça, j'ai pas directement sous la main. 
+A la place, je vais utiliser la bibliothèque [toneAC](https://github.com/jurs/toneAC) qui promet un volume double de ce que produirait un 
+arduino normale. 
+
+
