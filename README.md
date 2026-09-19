@@ -16,6 +16,6 @@ Samedi 19 septembre. On reprend le problème(?) de l'amplification. Je me base s
 
 Schema : ![image](schema1.jpg)
 
-D'abord, un modèle sans amplification le fichier[HappyBirthday](./happybirthday/happybirthday.ino). Le son est trop bas pour faire vibrer une membrane.
+D'abord, un modèle sans amplification le fichier [happybirthday](./happybirthday/happybirthday.ino). Le son est trop bas pour faire vibrer une membrane.
 
 
