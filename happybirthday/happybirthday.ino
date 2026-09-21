@@ -1,54 +1,82 @@
-// Define the buzzer pin
-int buzzerPin = 8;
-// entrées du haut-parleur : ground et 8
-// Note definitions for the melody
-#define NOTE_C4 262
-#define NOTE_D4 294
-#define NOTE_E4 330
-#define NOTE_F4 349
-#define NOTE_G4 392
-#define NOTE_A4 440
-#define NOTE_AS4 466
-#define NOTE_C5 523
+// set piano notes (frequencies)
+#define c 3830 
+#define d 3400 
+#define e 3038 
+#define f 2864 
+#define g 2550 
+#define a 2272 
+#define b 2028 
+#define C 1912 
+#define R 0
 
-// Define the "Happy Birthday" melody
-int melody[] = {
-  NOTE_C4, NOTE_C4, NOTE_D4, NOTE_C4, NOTE_F4, NOTE_E4, // "Happy Birthday to You"
-  NOTE_C4, NOTE_C4, NOTE_D4, NOTE_C4, NOTE_G4, NOTE_F4, // "Happy Birthday to You"
-  NOTE_C4, NOTE_C4, NOTE_C5, NOTE_A4, NOTE_F4, NOTE_E4, NOTE_D4, // "Happy Birthday dear [Name]"
-  NOTE_AS4, NOTE_AS4, NOTE_A4, NOTE_F4, NOTE_G4, NOTE_F4 // "Happy Birthday to You"
-};
+// buzzer pin is D26 on ESP32 
 
-// Define the note durations
-int noteDurations[] = {
-  4, 4, 4, 4, 4, 2,
-  4, 4, 4, 4, 4, 2,
-  4, 4, 4, 4, 4, 4, 2,
-  4, 4, 4, 4, 4, 2
-};
-
-
+int buzzOut  = 26;
+int startFlag = 1;
+int flagPlay=1;
+// this rhythm_measure is the tempo of the song
+long rhythm_measure = 10000;
+ 
+int pauseTime = 500;
+int do_nothing = 2; 
+ 
+int audioTone = 0;
+int beat1 = 0;
+long timedur  = 0;
 
 void setup() {
-  while(1){
-  // Iterate over the notes of the melody:
-  for (int thisNote = 0; thisNote < 24; thisNote++) {
-    // To calculate the note duration, take one second divided by the note type.
-    int noteDuration = 1000 / noteDurations[thisNote];
-    tone(buzzerPin, melody[thisNote], noteDuration);
-
-    // To distinguish the notes, set a minimum time between them.
-    int pauseBetweenNotes = noteDuration * 1.30;
-    delay(pauseBetweenNotes);
-
-    // Stop the tone playing:
-    noTone(buzzerPin);
-  }
-   
-  }
+   // set the buzzer as output component for melody
+   pinMode(buzzOut, OUTPUT);
+   if (startFlag) {
+      // specify the baud rate
+      Serial.begin(9600); 
+   }
 }
 
+// these are the music notes for Twinkle twinkle little star poem
+double songNotes[] = {
+   c,c,g,g,a,a,g,
+   f,f,e,e,d,d,c,
+   g,g,f,f,e,e,d,
+   g,g,f,f,e,e,d,
+   c,c,g,g,a,a,g,
+   f,f,e,e,d,d,c
+};
+
+int MAX_COUNT = sizeof(songNotes) / 2; 
+ 
+// this is the function which makes the buzzer high and low while playing the poem notes
+void playNotes() {
+   long passed_time = 0;
+   if (audioTone > 0) { 
+     
+      while (passed_time < timedur) {
+      digitalWrite(buzzOut,HIGH);
+      delayMicroseconds(audioTone / 2);
+      digitalWrite(buzzOut, LOW);
+      delayMicroseconds(audioTone / 2);
+      passed_time += (audioTone);
+      }
+   }
+   else { 
+      for (int n = 0; n < do_nothing; n++) { 
+         delayMicroseconds(timedur); 
+      }   
+   } 
+                           
+}
 void loop() {
-  // No need to repeat the melody in the loop for this example.
-  // The setup() is enough to play it once.
-}
+   for (int m=0; m<MAX_COUNT; m++) {
+      audioTone = songNotes[m];
+       beat1 = 50;
+
+
+       timedur = beat1 * rhythm_measure; 
+       if( flagPlay != 0)        {
+         playNotes();
+      }
+     
+      delayMicroseconds(pauseTime);
+   }
+   delay(500);
+} 
