@@ -20,3 +20,14 @@ D'abord, un modèle sans amplification le fichier [happybirthday](./happybirthda
 
 Et puis avec l'ampli du tuto cité plus haut. On entends, mais c'est toujours pas assez fort pour faire vibrer une membrane. Voir photos et vidéos, j'ai un peu simplifié le schéma, mais ça ne change pas grand chose. Je n'avais pas le bon Mosfet, j'ai utilisé un BUK553, c'est tout ce que j'avais. 
 
+En même temps, j'ai cramé l'arduino, je ontinue avec un esp32. 
+J'ai acheté des amplis tout fait TDA2030 et une alimentation réglable, et ça a fini par marché. 
+Le cablage est ici : ![image](cablage.jpg)
+
+Il y a aussi les programmes qui font des sons. 
+
+Je me suis aussi rappelé que j'avais construit un ampli pour un speakjet (un circuit de synthèse vocale) : 
+ ![image](speakjet.jpg)
+
+Si je retrouve mes LM386, je vais essayer de le refaire. 
+
