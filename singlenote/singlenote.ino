@@ -11,8 +11,8 @@ void setup() {
 }
 
 void loop() {
-  tone(BUZZER_PIN, 44);       // Play concert A (440 Hz)
-  delay(10000);                 // Let it play for one second
+  tone(BUZZER_PIN, 440);       // Play concert A (440 Hz)
+  delay(100000);                 // Let it play for one second
   noTone(BUZZER_PIN);          // Stop the tone
   delay(500);                  // Pause for half a second
 }
