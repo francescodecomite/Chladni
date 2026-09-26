@@ -45,5 +45,6 @@ J'ai rajouté un potentiomètre pour pouvoir changer la fréquence, mais il faut
 On ne doit pas changer le son à chaque mouvement du potentiomètre, je vais utiliser les interruptions, et ne faire un changement
 que lorsque la nouvelle valeur est significativement différente de la précédente. 
 
-Pour les interr
+Pour les interrutpions j'ai essayé plusieurs trucs (interruption quand le potentiomètre change, lecture par un timer) mais ça me fait tout le temps rebuter le micro-contrôleur. Finalement, je regarde si le changement est significatif, et aors je change. 
+ça donne des valeurs plus stable, et donc la note tiens plus longtemps. 
 
