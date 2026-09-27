@@ -31,7 +31,7 @@ void loop() {
  
   if(abs(newValue-analogValue)>0.5*analogValue){
     analogValue=newValue; 
-    freq = map(analogValue, 0, 4095, 100, 1500);
+    freq = map(analogValue, 0, 4095, 30, 500);
     Serial.println(freq);
     tone(BUZZER_PIN, freq); 
   }
