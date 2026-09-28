@@ -51,3 +51,11 @@ Pour les interruptions j'ai essayé plusieurs trucs (interruption quand le poten
 27/09
 J'ai découpé une autre plaque plus petite (la taille et la structure de la plaque jouent un rôle dans les figures générées). J'ai peint les plaques en noir, les vidéos qui s'appellent 'sunday' sont assez jolies. 
 
+
+28/09
+J'ai remplacé le sable par du bicarbonate de soude, ça marche mieux, c'est plus léger. J'ai essayé des fréquences plus élevées. Au dessus de 1000-2000 Hz, il ne se passe plus rien. La plaques est trop epaisse ? 
+
+A faire : essayer des fréquences encore plus élevées ....
+
+Entre 500 et 1000, on a des courbes rigolotes (voir la vidéo monday .  En fait non, le fichier est trop gros, il est sur Bluesky ). J'i fait des captures d'écran qui s'appellent lunid1 à lundi4
+
