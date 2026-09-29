@@ -12,7 +12,8 @@ et ça, j'ai pas directement sous la main. En fait peut-être que si.
 Je voulais aussi  utiliser la bibliothèque [toneAC](https://github.com/jurs/toneAC) qui promet un volume double de ce que produirait un 
 arduino normale. Mais le fichier [toneAC_Demo](./toneAC_demo.pde) retourne plein d'erreur .. à voir.
 
-Samedi 19 septembre. On reprend le problème(?) de l'amplification. Je me base sur [ce tuto](https://passionelectronique.fr/haut-parleur-arduino/  )
+# Samedi 19 septembre. 
+On reprend le problème(?) de l'amplification. Je me base sur [ce tuto](https://passionelectronique.fr/haut-parleur-arduino/  )
 
 Schema : ![image](schema1.jpg)
 
@@ -31,7 +32,7 @@ Je me suis aussi rappelé que j'avais construit un ampli pour un speakjet (un ci
 
 Si je retrouve mes LM386, je vais essayer de le refaire. 
 
-#26/09
+# 26/09
 En utilisant ce tuto : https://www.youtube.com/watch?v=hKmPc0Q0kKg
 
 J'ai refait un truc en collant une tige filetée sur la membrane du haut-parleur. 
@@ -48,18 +49,18 @@ que lorsque la nouvelle valeur est significativement différente de la précéde
 Pour les interruptions j'ai essayé plusieurs trucs (interruption quand le potentiomètre change, lecture par un timer) mais ça me fait tout le temps rebooter le micro-contrôleur. Finalement, je regarde si le changement est significatif, et alors je change. 
 ça donne des valeurs plus stables, et donc la note tient plus longtemps. 
 
-#27/09
+# 27/09
 J'ai découpé une autre plaque plus petite (la taille et la structure de la plaque jouent un rôle dans les figures générées). J'ai peint les plaques en noir, les vidéos qui s'appellent 'sunday' sont assez jolies. 
 
 
-#28/09
+# 28/09
 J'ai remplacé le sable par du bicarbonate de soude, ça marche mieux, c'est plus léger. J'ai essayé des fréquences plus élevées. Au dessus de 1000-2000 Hz, il ne se passe plus rien. La plaques est trop epaisse ? 
 
 A faire : essayer des fréquences encore plus élevées ....
 
 Entre 500 et 1000, on a des courbes rigolotes (voir la vidéo monday .  En fait non, le fichier est trop gros, il est sur Bluesky ). J'i fait des captures d'écran qui s'appellent lundi1 à lundi4.
 
-#29/09
+# 29/09
 
 On va rajouter l'affichage sur un écran led, puis on mixera les deux fonctions dans un seul programme. 
 
