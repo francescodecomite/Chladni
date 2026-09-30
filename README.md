@@ -70,7 +70,11 @@ Je me base sur [ce tuto](https://www.instructables.com/ESP32-How-to-Interface-LC
 Il y a un problème par rapport au nombre de pattes de mon lcd (14 au lieu de 16)...
 
 J'ai aussi un [autre tuto](https://www.circuitschools.com/interfacing-16x2-lcd-module-with-esp32-with-and-without-i2c/) qui utilise l'entrée 5v au lieu de 3.3v
-Pour le moment y a rien qui marche, j'ai commandé des nouveaux écrans lcd, celui e j'ai me semble naze. 
+Pour le moment y a rien qui marche, j'ai commandé des nouveaux écrans lcd, celui que j'ai me semble naze. 
+
+# 30/09
+J'ai retiré la membreane d'un haut parleur, en gardant la partie vibrante. Le bruit est beaucoup plus supportable. 
+
 
 
 
