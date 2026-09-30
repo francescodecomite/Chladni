@@ -73,7 +73,11 @@ J'ai aussi un [autre tuto](https://www.circuitschools.com/interfacing-16x2-lcd-m
 Pour le moment y a rien qui marche, j'ai commandé des nouveaux écrans lcd, celui que j'ai me semble naze. 
 
 # 30/09
-J'ai retiré la membreane d'un haut parleur, en gardant la partie vibrante. Le bruit est beaucoup plus supportable. 
+J'ai retiré la membrane d'un haut parleur, en gardant la partie vibrante. Le bruit est beaucoup plus supportable. Mais la vibration n'a plus de force. 
+En plus, d'après l'electronicien qu'on est passés voir à Polytech, le fait d'enlever la membrane fait que le solenoide qui vibre à la base ne reste plus droit, il frotte contre l'aimant et peut induire des court-circuits. 
+
+Avec la petite plaque, il ne se passe rien (les grains ne bougent pas) au-dessus de 1000 Hertz. 
+Avec la grande plaque, il ne passe carrément rien.
 
 
 

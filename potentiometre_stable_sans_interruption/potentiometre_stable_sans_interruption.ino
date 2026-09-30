@@ -32,7 +32,7 @@ void loop() {
   if(abs(newValue-analogValue)>0.05*analogValue){
     analogValue=newValue; 
    
-    freq = map(analogValue, 0, 4095, 50, 1000);
+    freq = map(analogValue, 0, 4095, 500, 4000);
     Serial.print(analogValue);
     Serial.print("  ");
     Serial.println(freq);
