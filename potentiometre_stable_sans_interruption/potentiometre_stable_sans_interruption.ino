@@ -29,10 +29,10 @@ void loop() {
  newValue=analogRead(34); 
  if (n%10000==0){
  
-  if(abs(newValue-analogValue)>0.5*analogValue){
+  if(abs(newValue-analogValue)>0.05*analogValue){
     analogValue=newValue; 
    
-    freq = map(analogValue, 0, 4095, 1000, 2000);
+    freq = map(analogValue, 0, 4095, 50, 1000);
     Serial.print(analogValue);
     Serial.print("  ");
     Serial.println(freq);
