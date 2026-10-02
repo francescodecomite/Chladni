@@ -83,7 +83,7 @@ Avec la grande plaque, il ne passe carrément rien.
 
 Le premier programme avec un écran led marche, mon ancien écran était nase. C'est la version qui utilise plein de fils, provenant du deuxième tuto. Les cablâges sont ceux du tuto, mais voici une jolie photo avec un écran Led malpoli.
 
- ![image](led1.jpg)
+ ![image](led1.jpeg)
 
 
 
