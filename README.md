@@ -79,6 +79,12 @@ En plus, d'après l'electronicien qu'on est passés voir à Polytech, le fait d'
 Avec la petite plaque, il ne se passe rien (les grains ne bougent pas) au-dessus de 1000 Hertz. 
 Avec la grande plaque, il ne passe carrément rien.
 
+# 02/10
+
+Le premier programme avec un écran led marche, mon ancien écran était nase. C'est la version qui utilise plein de fils, provenant du deuxième tuto. Les cablâges sont ceux du tuto, mais voici une jolie photo avec un écran Led malpoli.
+
+ ![image](led1.jpg)
+
 
 
 
